@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:shop_app/views/orders_page.dart';
+import 'package:shop_app/views/user_products_page.dart';
 
 import 'views/cart_page.dart';
 import 'views/product_detail_page.dart';
@@ -24,7 +25,7 @@ class MyApp extends StatelessWidget {
           value: Cart(),
         ),
         ChangeNotifierProvider.value(
-            value: Orders(),
+          value: Orders(),
         )
       ],
       child: MaterialApp(
@@ -39,6 +40,7 @@ class MyApp extends StatelessWidget {
           ProductDetailPage.nameRoute: (ctx) => ProductDetailPage(),
           CartPage.routeName: (ctx) => CartPage(),
           OrdersPage.routeName: (ctx) => OrdersPage(),
+          UserProductsPage.routeName: (ctx) => UserProductsPage(),
         },
       ),
     );
