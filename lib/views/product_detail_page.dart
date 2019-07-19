@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-
-import '../providers/products_provider.dart';
+import 'package:shop_app/providers/products.dart';
 
 class ProductDetailPage extends StatelessWidget {
   static const String nameRoute = '/product-detail';
